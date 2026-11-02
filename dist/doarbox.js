@@ -131,6 +131,15 @@
       return parseAmounts(this.getAttribute("amounts"));
     }
 
+    // React 19 sets IDL properties on custom elements; without a setter this throws.
+    set amounts(value) {
+      if (value == null || value === false) {
+        this.removeAttribute("amounts");
+      } else {
+        this.setAttribute("amounts", String(value));
+      }
+    }
+
     setFrequency(freq) {
       this._frequency = freq;
       this._error = "";
