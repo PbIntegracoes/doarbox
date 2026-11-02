@@ -2,8 +2,23 @@
   "use strict";
 
   var API_BASE = "https://api.pbintegracoes.com/v1";
-  var DEFAULT_LOGO =
-    "https://cdn.jsdelivr.net/gh/r-martins/pb-doarbox@5/dist/doarbox-logo.png";
+  var DEFAULT_LOGO = (function () {
+    var scripts = document.getElementsByTagName("script");
+    for (var i = scripts.length - 1; i >= 0; i--) {
+      var src = scripts[i].src || "";
+      if (/doarbox\.js(\?|#|$)/.test(src)) {
+        return src.replace(/doarbox\.js(\?.*)?(#.*)?$/, "doarbox-logo.png");
+      }
+    }
+    if (document.currentScript && document.currentScript.src) {
+      try {
+        return new URL("doarbox-logo.png", document.currentScript.src).href;
+      } catch (e) {
+        /* fall through */
+      }
+    }
+    return "https://cdn.jsdelivr.net/gh/r-martins/pb-doarbox@5/dist/doarbox-logo.png";
+  })();
   var SITE_URL = "https://pbintegracoes.com/doarbox";
   var DEFAULT_AMOUNTS = [10, 50, 100];
   var MIN_REAIS = 1;
