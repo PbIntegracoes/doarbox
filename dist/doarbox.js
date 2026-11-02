@@ -17,7 +17,7 @@
         /* fall through */
       }
     }
-    return "https://cdn.jsdelivr.net/gh/r-martins/pb-doarbox@5/dist/doarbox-logo.png";
+    return "https://cdn.jsdelivr.net/gh/pbintegracoes/doarbox@5/dist/doarbox-logo.png";
   })();
   var SITE_URL = "https://pbintegracoes.com/doarbox";
   var DEFAULT_AMOUNTS = [10, 50, 100];

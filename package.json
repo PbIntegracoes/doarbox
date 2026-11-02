@@ -1,7 +1,11 @@
 {
-  "name": "pb-doarbox",
-  "version": "5.0.0",
+  "name": "@pbintegracoes/doarbox",
+  "version": "5.0.1",
   "private": true,
-  "description": "DoarBox embed — partner-agnostic donation widget for PB Integrações",
-  "license": "UNLICENSED"
+  "description": "DoarBox — caixinha de doações embutível (PB Integrações)",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pbintegracoes/doarbox.git"
+  }
 }
