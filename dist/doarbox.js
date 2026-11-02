@@ -200,7 +200,7 @@
         '">Mensal</button>' +
         "</div>" +
         (!freqOnce
-          ? '<p class="hint">Cobrança mensal no cartão. Você pode cancelar a qualquer momento pelo link enviado após a doação.</p>'
+          ? '<p class="hint">Cobrança mensal no cartão. Você pode cancelar a qualquer momento pelo link na página de confirmação.</p>'
           : "") +
         "<hr/>" +
         '<h2>Escolha um valor</h2>' +
