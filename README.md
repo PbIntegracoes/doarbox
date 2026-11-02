@@ -9,8 +9,10 @@ Caixa de doação embutível (partner-agnostic). O site do lojista só escolhe v
 
 ```html
 <doar-box box="dbx_xxxxxxxx" title="Contribua com nosso projeto"></doar-box>
-<script src="https://cdn.jsdelivr.net/gh/r-martins/pb-doarbox@5/dist/doarbox.js"></script>
+<script src="https://pbintegracoes.com/doarbox/v5/doarbox.js"></script>
 ```
+
+(Alternativa CDN: `https://cdn.jsdelivr.net/gh/r-martins/pb-doarbox@5/dist/doarbox.js` após o tag `5` no GitHub.)
 
 ## Atributos
 
