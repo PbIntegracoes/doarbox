@@ -1,0 +1,7 @@
+{
+  "name": "pb-doarbox",
+  "version": "5.0.0",
+  "private": true,
+  "description": "DoarBox embed — partner-agnostic donation widget for PB Integrações",
+  "license": "UNLICENSED"
+}
